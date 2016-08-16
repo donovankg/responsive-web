@@ -3,140 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<style type="text/css">
-			/*default mobile devices; 480 and lower px screen size*/
-			body{
-				background: red;
-				margin: 0;
-			}
-			#logo{
-				position: absolute;
-				left: 0px;
-			}
-			#frame{
-				position: absolute;
-				background-color: none;
-
-			}
-			p{
-				margin: 10px;
-			}
-			nav{
-				position: absolute;
-			}
-			li{
-				list-style-type: none;
-			}
-			li:hover{
-				background: red;
-				transform: scale(1.5);
-				animation: spinlinks .3s
-			}
-			@keyframes spinlinks{
-				0% {transform: rotateX(0deg);}
-				100% {transform: rotateX(1440deg);}
-
-			}
-			article{
-				position: absolute;
-				
-			}
-			#logo img{
-				height: 100px;
-			}
-			/* screen size for 481 to 1023 px*/
-			@media (min-width: 481px) and (max-width: 1023px){
-				body{
-					background: yellow;
-				}
-				#frame{
-					top: 0;
-					background-color: white;
-					width: 60%;
-					height: 90%;
-					left:20%;
-					box-shadow: 10px 10px 5px black;
-					background-image: url(images/BG.jpg);
-				}
-				#logo{
-					position: absolute;
-					left: 18%;
-					animation: logomove 3s;
-				}
-				@keyframes logomove{
-					0%   { opacity: 0}
-					100% { opacity: 1}
-				}
-				article{
-					
-					top: 30%;
-				}
-				nav{
-					display: block;
-					left:-30px;
-				}
-				#logo img{
-
-					height: 160px;
-					}
-			}
-			/* screen size thats 1024px and larger */
-			@media(min-width: 1024px){
-				body{
-					background: green;
-					overflow: hidden;
-				}
-				#frame{
-					top: 0;
-					background-color: white;
-					width: 60%;
-					height: 90%;
-					left:20%;
-					box-shadow: 10px 10px 5px black;
-					overflow: hidden;
-				}
-				#logo{
-					position: absolute;
-					left: 35%;
-					animation: logofade .5s;
-					}
-				@keyframes logofade{
-					0% {transform: rotateZ(90deg)scale(-100);}
-					100%{transform: rotateZ(0deg)}
-				}	
-				#moves{
-					position: relative;
-					-moz-animation: movingclouds 20s infinite;
-				    -webkit-animation: movingclouds 20s infinite;
-				    animation: movingclouds 20s infinite;
-				}
-				@keyframes movingclouds{
-					0% {right:0;}
-					100% {right: 50%;}
-					
-				}
-				article{
-					top: 40%;
-				}
-				#logo img{
-					height: 250px;
-					}
-			}
-
-		</style>
-		<!-- 
-		yes	Style of the webpage
-		yes	Using semantic tags when necessary
-			Not using properties that are redundant, for example assigning to a block element a width of 100%
-			Using Flex Box
-		yes	A nice carrousel
-		yes	The movement of the logo
-		yes	The content that should be hidden when the layout is for mobile
-			Use a font that your file would need to download, you can get a cool font from here
-		yes	Implement an animation for the logo
-			The navbar links should have a different state when hover over them
-
-		-->
+		<link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 	<div id="moves">
@@ -154,7 +23,6 @@
 			<li><a href="">products</a></li>
 		</ul>
 		</nav>
-
 			<picture id="logo">
 				<source media="(min-width: 1024px)" srcset="images/large/logo.png">
 				<source media="(min-width: 481px)" srcset="images/med/logo.png">
