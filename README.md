@@ -11,8 +11,8 @@ Create a reponsive layout using flex that will behave as this webpage http://ste
   * If you detect the end user's screen is smaller than 480 pixels you have to show the smartphone layout
   * If the screen is larger than 480 pixels but smaller than 1024 pixels, show us the tablet layout
   * If the screen is larger than 1024 show the regular desktop layout.
-
-Thing to be evaluated
+ 
+###Thing to be evaluated
   * Style of the webpage
   * Using semantic tags when necessary
   * Not using properties that are redundant, for example assigning to a block element a width of 100%
@@ -24,3 +24,6 @@ Thing to be evaluated
   * Implement an animation for the logo
   * The navbar links should have a different state when hover over them
 
+### Resources
+
+* [Website Dimensions](http://www.websitedimensions.com/)
