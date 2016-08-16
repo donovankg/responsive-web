@@ -7,27 +7,83 @@
 			/*default mobile devices; 480 and lower px screen size*/
 			body{
 				background: red;
+				margin: 0;
 			}
-			
+			#logo{
+				position: absolute;
+				left: 0px;
+			}
+			#frame{
+				position: absolute;
+				background-color: none;
+
+			}
 			/* screen size for 481 to 1023 px*/
 			@media (min-width: 481px) and (max-width: 1023px){
 				body{
 					background: yellow;
+				}
+				#frame{
+					top: 0;
+					background-color: white;
+					width: 60%;
+					height: 90%;
+					left:20%;
+					box-shadow: 10px 10px 5px black;
+					background-image: url(images/BG.jpg);
+				}
+				#logo{
+					position: absolute;
+					left: 33%;
 				}
 			}
 			/* screen size thats 1024px and larger */
 			@media(min-width: 1024px){
 				body{
 					background: green;
+					overflow: hidden;
 				}
+				#frame{
+					top: 0;
+					background-color: white;
+					width: 60%;
+					height: 90%;
+					left:20%;
+					box-shadow: 10px 10px 5px black;
+					overflow: hidden;
+				}
+				#logo{
+					position: absolute;
+					left: 35%;
+					}
+				#moves{
+					position: relative;
+					-moz-animation: movingclouds 40s infinite;
+				    -webkit-animation: movingclouds 40s infinite;
+				    animation: movingclouds 40s infinite;
+				}
+				@keyframes movingclouds{
+					0% {right:0;}
+					50% {right: 50%;}
+					100% {right:0;}
+				}
+
 			}
 		</style>	
 	</head>
 	<body>
-		<picture>
-			<source media="(min-width: 1024px)" srcset="images/large/logo.png">
-			<source media="(min-width: 481px)" srcset="images/med/logo.jpeg">
-			<img src="images/small/logo.jpg" alt="The wolf runs through the snow.">
-		</picture>
+	<div id="moves">
+		<picture id ="clouds">
+			<source media="(min-width: 1024px)" srcset="images/clouds.jpg 2450w">
+			<img src="">
+	</div>
+	</picture>
+		<div id ="frame">
+			<picture id="logo">
+				<source media="(min-width: 481px)" srcset="images/med/logo.jpeg 2500w">
+				<img src="images/small/logo.jpg" alt="The wolf runs through the snow.">
+			</picture>
+			test
+		</div>
 	</body>
 </html>
