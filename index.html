@@ -18,6 +18,32 @@
 				background-color: none;
 
 			}
+			p{
+				margin: 10px;
+			}
+			nav{
+				position: absolute;
+			}
+			li{
+				list-style-type: none;
+			}
+			li:hover{
+				background: red;
+				transform: scale(1.5);
+				animation: spinlinks .3s
+			}
+			@keyframes spinlinks{
+				0% {transform: rotateX(0deg);}
+				100% {transform: rotateX(1440deg);}
+
+			}
+			article{
+				position: absolute;
+				
+			}
+			#logo img{
+				height: 100px;
+			}
 			/* screen size for 481 to 1023 px*/
 			@media (min-width: 481px) and (max-width: 1023px){
 				body{
@@ -34,8 +60,25 @@
 				}
 				#logo{
 					position: absolute;
-					left: 33%;
+					left: 18%;
+					animation: logomove 3s;
 				}
+				@keyframes logomove{
+					0%   { opacity: 0}
+					100% { opacity: 1}
+				}
+				article{
+					
+					top: 30%;
+				}
+				nav{
+					display: block;
+					left:-30px;
+				}
+				#logo img{
+
+					height: 160px;
+					}
 			}
 			/* screen size thats 1024px and larger */
 			@media(min-width: 1024px){
@@ -55,35 +98,86 @@
 				#logo{
 					position: absolute;
 					left: 35%;
+					animation: logofade .5s;
 					}
+				@keyframes logofade{
+					0% {transform: rotateZ(90deg)scale(-100);}
+					100%{transform: rotateZ(0deg)}
+				}	
 				#moves{
 					position: relative;
-					-moz-animation: movingclouds 40s infinite;
-				    -webkit-animation: movingclouds 40s infinite;
-				    animation: movingclouds 40s infinite;
+					-moz-animation: movingclouds 20s infinite;
+				    -webkit-animation: movingclouds 20s infinite;
+				    animation: movingclouds 20s infinite;
 				}
 				@keyframes movingclouds{
 					0% {right:0;}
-					50% {right: 50%;}
-					100% {right:0;}
+					100% {right: 50%;}
+					
 				}
-
+				article{
+					top: 40%;
+				}
+				#logo img{
+					height: 250px;
+					}
 			}
-		</style>	
+
+		</style>
+		<!-- 
+		yes	Style of the webpage
+		yes	Using semantic tags when necessary
+			Not using properties that are redundant, for example assigning to a block element a width of 100%
+			Using Flex Box
+		yes	A nice carrousel
+		yes	The movement of the logo
+		yes	The content that should be hidden when the layout is for mobile
+			Use a font that your file would need to download, you can get a cool font from here
+		yes	Implement an animation for the logo
+			The navbar links should have a different state when hover over them
+
+		-->
 	</head>
 	<body>
 	<div id="moves">
 		<picture id ="clouds">
-			<source media="(min-width: 1024px)" srcset="images/clouds.jpg 2450w">
+			<source media="(min-width: 1024px)" srcset="images/clouds.jpg 1750w">
 			<img src="">
 	</div>
 	</picture>
 		<div id ="frame">
+		<nav>
+		<ul>
+			<li><a href="">home</a></li>
+			<li><a href="">about us</a></li>
+			<li><a href="">links</a></li>
+			<li><a href="">products</a></li>
+		</ul>
+		</nav>
+
 			<picture id="logo">
-				<source media="(min-width: 481px)" srcset="images/med/logo.jpeg 2500w">
+				<source media="(min-width: 1024px)" srcset="images/large/logo.png">
+				<source media="(min-width: 481px)" srcset="images/med/logo.png">
 				<img src="images/small/logo.jpg" alt="The wolf runs through the snow.">
 			</picture>
-			test
+			<article>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</article>
 		</div>
 	</body>
 </html>
