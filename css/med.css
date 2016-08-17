@@ -36,15 +36,8 @@ body{
 	0%   { opacity: 0}
 	100% { opacity: 1}
 }
-article{
-	top: 40%;
-}
-p{
-	width: 40%;
-	top: -100px;
-}
+
 nav{
-	display: block;
 	left:-30px;
 }
 #logo img{
@@ -55,60 +48,13 @@ nav{
 #clouds img{
 	width: 500%;
 }
-}
-/* screen size thats 1024px and larger */
-@media(min-width: 1024px){
-body{
-	font-size: 12px;	
-	font-family: 'Uncial Antiqua', cursive;
-	background: green;
-	overflow: hidden;
-}
-#frame{
-	top: 0;
-	background-color: white;
-	width: 60%;
-	height: 90%;
-	left:20%;
-	box-shadow: 10px 10px 5px black;
-	overflow: hidden;
-}
-#logo{
-
-	position: absolute;
-	left: 35%;
-	animation: logofade .5s;
-	}
-@keyframes logofade{
-	0% {transform: rotateZ(90deg)scale(-100);}
-	100%{transform: rotateZ(0deg)}
-}	
-#moves{
-	padding: 0;
-	margin: 0;
-	top:-10px;
-	position: relative;
-	-moz-animation: movingclouds 20s infinite;
-    -webkit-animation: movingclouds 20s infinite;
-    animation: movingclouds 20s infinite;
-}
-@keyframes movingclouds{
-	0% {right:0;}
-	100% {right: 50%;}
-	
-}
-#clouds{
-	position: absolute;
-	left: -10px;
-}
 article{
-	width: 600px;
-	top: 40%;
-}
-#logo img{
-
-	height: 250px;
+	flex: 0 2 auto;
+	display: flex;
+	background: yellow;
 }
 p{
-	width: 48%;
+	margin: 5px;
+	flex: 0 2 auto;
+	background: green;
 }

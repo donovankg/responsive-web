@@ -2,50 +2,31 @@ body{
 	background: red;
 
 }
-#logo{
-	position: absolute;
-	left: 0px;
-}
+
 #frame{
-	position: absolute;
-	background-color: none;
-
+	margin: 5px;
+	background: white;
+	display: flex;
+	flex-direction: column;
 }
-
-nav{
-	position: absolute;
+h1{
+	margin: 0 0 -10px 0;
 }
-ul{
-
+article{
+	flex: 0 2 auto;
+	display: flex;
+	background: yellow;
 }
-li{
-	display: inline-block;
-	font-size: 20px;
-	list-style-type: none;
-}
-li:hover{
-	background: red;
-	animation: spinlinks .5s;
-	transform: scale(1.5);
+p{
+	margin: 5px;
+	flex: 0 2 auto;
+	background: green;
 }
 @keyframes spinlinks{
 	from {transform: rotateX(0deg);}
 	to {transform: rotateX(740deg);}
-
-}
-article{
-	top: 145px;
-	position: absolute;
-	display: flex;
-
-}
-p{
-	width: 170px;
-	top:90px;
-	margin: 10px;
-	display: box;
 }
 #logo img{
+	width: 100px;
 	display: none;
-	height: 50px;
 }

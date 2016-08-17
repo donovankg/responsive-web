@@ -2,27 +2,19 @@ body{
 	font-size: 12px;	
 	font-family: 'Uncial Antiqua', cursive;
 	background: green;
-	overflow: hidden;
 }
 #frame{
 	top: 0;
 	background-color: white;
 	width: 60%;
-	height: 90%;
+	height: 90vh;
 	left:20%;
 	box-shadow: 10px 10px 5px black;
-	overflow: hidden;
 }
-#logo{
-
-	position: absolute;
-	left: 35%;
-	animation: logofade .5s;
-	}
-@keyframes logofade{
-	0% {transform: rotateZ(90deg)scale(-100);}
-	100%{transform: rotateZ(0deg)}
-}	
+#title{
+	margin: 15px;
+	flex:0 2 auto;
+}
 #moves{
 	padding: 0;
 	margin: 0;
@@ -41,14 +33,21 @@ body{
 	position: absolute;
 	left: -10px;
 }
-article{
-	width: 600px;
-	top: 40%;
-}
 #logo img{
 
 	height: 250px;
 }
+article{
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	background: yellow;
+}
 p{
-	width: 48%;
+	margin: 5px;
+	flex: 0 2 auto;
+	background: green;
+}
+nav{
+	flex:0 2;
 }

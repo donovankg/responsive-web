@@ -1,29 +1,35 @@
 
 /*default mobile devices; 480 and lower px screen size*/
+*{
+	box-sizing: border-box;
+}
 body{
 	background: red;
+}
 
-}
-#logo{
-	position: absolute;
-	left: 0px;
-}
 #frame{
 	position: absolute;
 	background-color: none;
-
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	
 }
-
-nav{
-	position: absolute;
+h1{
+	flex: 0 2 auto;
+	text-align: center;
 }
 ul{
-
+display: flex;
+flex-direction: row;
+flex: 0 2 auto;
 }
+
 li{
-	display: inline-block;
 	font-size: 20px;
 	list-style-type: none;
+	margin: 3px;
+	flex: 0 2 auto;
 }
 li:hover{
 	background: red;
@@ -33,21 +39,34 @@ li:hover{
 @keyframes spinlinks{
 	from {transform: rotateX(0deg);}
 	to {transform: rotateX(740deg);}
-
 }
-article{
-	top: 145px;
-	position: absolute;
+#slider{
+	background: red;
+	width: 40%;
+	overflow: hidden;
+	flex: 0 2 auto;
+}
+
+.box{
+	position: relative;
+	background: yellow;	
+	width: 400%;
 	display: flex;
-
+	animation: slider 4s infinite;
 }
-p{
-	width: 170px;
-	top:90px;
-	margin: 10px;
-	display: box;
+@keyframes slider{
+	0%    { left:0; }
+	5%   { left:0; }
+	10% { left:-100%; }
+	15% { left:-100%; }
+	20%   { left:-200%; }
+	25%   { left:-200%; }
+	30% { left:-300%; }
+	35% { left:-300%; }
+	40% { left:0; }
 }
-#logo img{
-	display: none;
-	height: 50px;
+#slider img{
+	flex: 0 2 auto;
+	width: 25%;
+	height: 25%;
 }
