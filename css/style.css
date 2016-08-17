@@ -5,6 +5,7 @@
 }
 body{
 	background: red;
+	overflow: hidden;
 }
 
 #frame{
@@ -13,16 +14,23 @@ body{
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
-	
+	margin: 10px;
 }
+
 h1{
+	background: skyblue;
 	flex: 0 2 auto;
 	text-align: center;
+	animation: 2s title;
+}
+@keyframes title{
+	from{opacity: 0;}
+	to {opacity: 1;}
 }
 ul{
-display: flex;
-flex-direction: row;
-flex: 0 2 auto;
+	display: flex;
+	flex-direction: row;
+	flex: 0 2 auto;
 }
 
 li{
@@ -31,10 +39,16 @@ li{
 	margin: 3px;
 	flex: 0 2 auto;
 }
+a{
+	color: lightblue;
+}
 li:hover{
-	background: red;
+	border: 10px;
+	border-radius: 5px;
+	background: cyan;
 	animation: spinlinks .5s;
 	transform: scale(1.5);
+	box-shadow: 3px 3px 3px blue;
 }
 @keyframes spinlinks{
 	from {transform: rotateX(0deg);}
@@ -52,7 +66,7 @@ li:hover{
 	background: yellow;	
 	width: 400%;
 	display: flex;
-	animation: slider 4s infinite;
+	animation: slider 10s infinite;
 }
 @keyframes slider{
 	0%    { left:0; }
@@ -65,8 +79,36 @@ li:hover{
 	35% { left:-300%; }
 	40% { left:0; }
 }
+#slider{
+	margin: 10px;
+}
 #slider img{
 	flex: 0 2 auto;
 	width: 25%;
 	height: 25%;
+}
+article{
+	background: lightblue;
+	margin: 10px;
+	box-shadow: 10px 10px 5px blue;
+	border: 1px solid blue;
+}
+p{
+
+	margin: 3px;
+	padding: 3px;
+}
+#balloons img{
+	position: absolute;
+	left:1%;
+	top:1%;
+	flex: 0 0 auto;
+	width: 5%;
+	animation: sway 5s infinite;
+}
+
+@keyframes sway{
+	0% {transform: rotateZ(10deg);}
+	50% {transform: rotateZ(-10deg);}
+	100% {transform: rotateZ(10deg);}
 }

@@ -40,11 +40,7 @@ body{
 nav{
 	left:-30px;
 }
-#logo img{
-	position: absolute;
-	left: 40px;
-	height: 150px;
-	}
+
 #clouds img{
 	width: 500%;
 }
@@ -57,4 +53,7 @@ p{
 	margin: 5px;
 	flex: 0 2 auto;
 	background: green;
+}
+ul{
+	margin: -20px 0 0 0;
 }
