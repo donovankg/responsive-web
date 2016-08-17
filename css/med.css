@@ -27,33 +27,20 @@ body{
 	100% {right: 50%;}
 	
 }
-#logo{
-	position: absolute;
-	left: 0%;
-	animation: logomove 3s;
-}
-@keyframes logomove{
-	0%   { opacity: 0}
-	100% { opacity: 1}
-}
 
 nav{
 	left:-30px;
+	margin-top: 10px;
 }
 
 #clouds img{
 	width: 500%;
 }
-article{
-	flex: 0 2 auto;
-	display: flex;
-	background: yellow;
-}
-p{
-	margin: 5px;
-	flex: 0 2 auto;
-	background: green;
-}
+
+
 ul{
-	margin: -20px 0 0 0;
+	margin: -15px 0 0 0;
+}
+#balloons img{
+	top:3%;
 }

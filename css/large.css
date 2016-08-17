@@ -1,7 +1,6 @@
 body{
 	font-size: 15px;	
 	font-family: 'Bubblegum Sans', cursive;
-	background: green;
 }
 #frame{
 	top: 0;
@@ -33,23 +32,14 @@ body{
 	position: absolute;
 	left: -10px;
 }
-#logo img{
 
-	height: 250px;
-}
 article{
-	flex: 0 0 auto;
-	display: flex;
 	flex-direction: column;
 }
-p{
-	margin: 5px;
-	flex: 0 2 auto;
-	background: green;
-}
+
 nav{
 	flex:0 2;
 }
 ul{
-	margin: -20px 0 0 0;
+margin: -20px 0 0 0;
 }

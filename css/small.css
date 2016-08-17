@@ -1,9 +1,10 @@
 body{
-	background: red;
+background-color: #4590D8;
 
 }
 
 #frame{
+	border-radius: 5px;
 	margin: 10px 10px 10px 0;
 	background: white;
 	display: flex;
@@ -12,16 +13,8 @@ body{
 h1{
 	margin: 0 0 -10px 0;
 }
-article{
-	flex: 0 2 auto;
-	display: flex;
-	background: yellow;
-}
-p{
-	margin: 5px;
-	flex: 0 2 auto;
-	background: green;
-}
+
+
 @keyframes spinlinks{
 	from {transform: rotateX(0deg);}
 	to {transform: rotateX(740deg);}
