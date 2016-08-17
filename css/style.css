@@ -1,12 +1,9 @@
-
-/*default mobile devices; 480 and lower px screen size*/
 *{
 	box-sizing: border-box;
 }
 body{
 	overflow: hidden;
 }
-
 #frame{
 	border-radius: 25px;
 	position: absolute;
@@ -16,8 +13,8 @@ body{
 	flex-direction: column;
 	margin: 10px;
 }
-
 h1{
+	text-shadow: 2px 2px #0757A4; 
 	border-radius: 5px;
 	color: #C7DEF5;
 	background: #6AA5DE;
@@ -35,17 +32,15 @@ ul{
 	flex-direction: row;
 	flex: 0 2 auto;
 }
-
 li{
+	text-shadow: 2px 2px #0757A4;
 	font-size: 20px;
 	list-style-type: none;
 	margin: 3px;
 	flex: 0 2 auto;
-
 }
 a{
 	color: #C7DEF5;
-
 }
 li:hover{
 	transition: all .5s ease-in-out;
@@ -56,9 +51,7 @@ li:hover{
 	transform: scale(1.5);
 	box-shadow: 3px 3px 3px #3D5BF9;
 }
-
 #slider{
-	background: red;
 	width: 40%;
 	overflow: hidden;
 	flex: 0 2 auto;
@@ -67,7 +60,6 @@ li:hover{
 }
 .box{
 	position: relative;
-
 	width: 400%;
 	display: flex;
 	animation: slider 10s infinite;
@@ -83,7 +75,6 @@ li:hover{
 	35% { left:-300%; }
 	40% { left:0; }
 }
-
 #slider img{
 	flex: 0 2 auto;
 	width: 25%;

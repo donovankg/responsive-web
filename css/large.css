@@ -25,14 +25,12 @@ body{
 }
 @keyframes movingclouds{
 	0% {right:0;}
-	100% {right: 50%;}
-	
+	100% {right: 50%;}	
 }
 #clouds{
 	position: absolute;
 	left: -10px;
 }
-
 article{
 	flex-direction: column;
 }
