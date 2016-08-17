@@ -66,14 +66,14 @@ li:hover{
 }
 @keyframes slider{
 	0%    { left:0; }
-	5%   { left:0; }
-	10% { left:-100%; }
-	15% { left:-100%; }
-	20%   { left:-200%; }
-	25%   { left:-200%; }
-	30% { left:-300%; }
-	35% { left:-300%; }
-	40% { left:0; }
+	9%   { left:0; }
+	18% { left:-100%; }
+	27% { left:-100%; }
+	36%   { left:-200%; }
+	45%   { left:-200%; }
+	54% { left:-300%; }
+	63% { left:-300%; }
+	72% { left:0; }
 }
 #slider img{
 	flex: 0 2 auto;
