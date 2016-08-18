@@ -5,12 +5,13 @@ body{
 
 }
 #frame{
-	border-radius: 25px;
+	border-radius: 1.5em;
 	position: absolute;
 	background-color: none;
 	display: flex;
 	flex-direction: column;
-	margin: 10px;
+	margin: 1em;
+	flex-wrap: wrap;
 }
 h1{
 	text-shadow: 2px 2px #0757A4; 
@@ -33,7 +34,7 @@ ul{
 }
 li{
 	text-shadow: 2px 2px #0757A4;
-	font-size: 20px;
+	font-size: 1.5em;
 	list-style-type: none;
 	margin: 3px;
 	flex: 0 2 auto;
@@ -41,7 +42,7 @@ li{
 a{
 	color: #C7DEF5;
 }
-li:hover{
+#links li:hover{
 	transition: all .5s ease-in-out;
 	color: #00ff00;
 	border: 10px;
@@ -53,11 +54,10 @@ li:hover{
 
 #slider{
 	border-radius: 25px;
-	width: 40%;
 	overflow: hidden;
-	flex: 0 2 auto;
+	flex: 0 0 40%;
 	margin: 10px;
-	box-shadow: 5px 5px 10px #4590D8;
+	
 }
 .box{
 	position: relative;
@@ -85,14 +85,21 @@ li:hover{
 	height: 25%;
 
 }
+section{
+	display: flex;
+	flex-direction: column;
+}
 aside{
 	border-radius: 5px;
 	background: lightblue;
 	margin: 10px;
 	box-shadow: 5px 5px 10px #4590D8;
 	border: 1px solid blue;
-	flex: 0 0 auto;
+	flex: 0 2 auto;
 	display: flex;
+}
+aside .info{
+	flex: 2 0 0;
 }
 article{
 	border-radius: 5px;
@@ -102,8 +109,9 @@ article{
 	border: 1px solid blue;
 	flex: 0 0 auto;
 	display: flex;
+	flex-direction: row;
 }
-p{
+.info{
 	border-radius: 3px;
 	margin: 5px;
 	padding: 3px;
@@ -127,4 +135,14 @@ p{
 ul{
 	background: #6AA5DE;
 	box-shadow: 0px 3px 6px #4590D8;
+}
+h3{
+	flex: 0 2 auto;
+	margin: 0;
+	text-align: center;
+	color: #174F67;
+	text-shadow: 2px 2px #DBF3FE; 
+}
+.info nav{
+	display: inline;
 }

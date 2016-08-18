@@ -17,3 +17,21 @@ h1{
 	from {transform: rotateX(0deg);}
 	to {transform: rotateX(740deg);}
 }
+section{
+	display: flex;
+	flex-direction: column;
+}
+
+li{
+	font-size: 1em;
+}
+p{
+	flex-wrap: wrap;
+}
+#article1{
+		flex-direction: column;
+}
+#balloons img{
+	left:1%;
+	top:0.3%;
+}
