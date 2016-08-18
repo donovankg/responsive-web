@@ -42,7 +42,7 @@ li{
 a{
 	color: #C7DEF5;
 }
-#links li:hover{
+li:hover{
 	transition: all .5s ease-in-out;
 	color: #00ff00;
 	border: 10px;
