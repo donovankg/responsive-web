@@ -101,6 +101,12 @@ aside{
 aside .info{
 	flex: 2 0 0;
 }
+#article1{
+	display: flex;
+}
+.speicals{
+display: inline;
+}
 article{
 	border-radius: 5px;
 	background: lightblue;
@@ -108,8 +114,14 @@ article{
 	box-shadow: 5px 5px 10px #4590D8;
 	border: 1px solid blue;
 	flex: 0 0 auto;
-	display: flex;
 	flex-direction: row;
+}
+h3{
+	flex: 0 2 auto;
+	margin: 0;
+	text-align: center;
+	color: #174F67;
+	text-shadow: 2px 2px #DBF3FE;
 }
 .info{
 	border-radius: 3px;
@@ -136,13 +148,10 @@ ul{
 	background: #6AA5DE;
 	box-shadow: 0px 3px 6px #4590D8;
 }
-h3{
-	flex: 0 2 auto;
-	margin: 0;
-	text-align: center;
-	color: #174F67;
-	text-shadow: 2px 2px #DBF3FE; 
-}
+
 .info nav{
 	display: inline;
+}
+iframe{
+	width: 100%;
 }

@@ -48,3 +48,6 @@ font-size: 	1.1em;
 	left:1%;
 	top:1%;
 }
+#article1{
+		flex-direction: column;
+}
