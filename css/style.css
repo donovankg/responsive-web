@@ -2,14 +2,13 @@
 	box-sizing: border-box;
 }
 body{
-	overflow: hidden;
+
 }
 #frame{
 	border-radius: 25px;
 	position: absolute;
 	background-color: none;
 	display: flex;
-	flex-wrap: nowrap;
 	flex-direction: column;
 	margin: 10px;
 }
@@ -51,7 +50,9 @@ li:hover{
 	transform: scale(1.5);
 	box-shadow: 3px 3px 3px #3D5BF9;
 }
+
 #slider{
+	border-radius: 25px;
 	width: 40%;
 	overflow: hidden;
 	flex: 0 2 auto;
@@ -60,9 +61,11 @@ li:hover{
 }
 .box{
 	position: relative;
+	border-radius: 25px;
 	width: 400%;
 	display: flex;
 	animation: slider 10s infinite;
+	background: none;
 }
 @keyframes slider{
 	0%    { left:0; }
@@ -76,9 +79,20 @@ li:hover{
 	72% { left:0; }
 }
 #slider img{
+	border-radius: 25px;
 	flex: 0 2 auto;
 	width: 25%;
 	height: 25%;
+
+}
+aside{
+	border-radius: 5px;
+	background: lightblue;
+	margin: 10px;
+	box-shadow: 5px 5px 10px #4590D8;
+	border: 1px solid blue;
+	flex: 0 0 auto;
+	display: flex;
 }
 article{
 	border-radius: 5px;

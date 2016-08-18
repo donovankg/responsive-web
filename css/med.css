@@ -6,31 +6,35 @@ body{
 	top: 0;
 	background-color: white;
 	width: 60%;
-	height: 95%;
 	left:0;
 	box-shadow: 10px 10px 5px black;
 	overflow: hidden;
 }
 #moves{
+	position: fixed;
 	padding: 0;
 	margin: 0;
 	top:-10px;
-	position: relative;
 	-moz-animation: movingclouds 20s infinite;
     -webkit-animation: movingclouds 20s infinite;
     animation: movingclouds 20s infinite;
 }
 	@keyframes movingclouds{
-	0% {right:0;}
-	100% {right: 50%;}	
+	0% {left: -2%;}
+	100% {left: -100%;}	
+}
+#clouds{
+	position: absolute;
+
+}
+#clouds img{
+	width: 3000px;
 }
 nav{
 	left:-30px;
 	margin-top: 10px;
 }
-#clouds img{
-	width: 500%;
-}
+
 ul{
 	margin: -15px 0 0 0;
 }
