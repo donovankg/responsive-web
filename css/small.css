@@ -2,6 +2,7 @@ body{
 background-color: #4590D8;
 }
 #frame{
+	top: 0%;
 	border-radius: 5px;
 	margin: 10px 10px 10px 0;
 	background: white;
@@ -34,4 +35,7 @@ p{
 #balloons img{
 	left:1%;
 	top:0.3%;
+}
+#moves{
+	visibility: hidden;
 }

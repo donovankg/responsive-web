@@ -64,7 +64,7 @@ li:hover{
 	border-radius: 25px;
 	width: 400%;
 	display: flex;
-	animation: slider 10s infinite;
+	animation: slider 20s infinite;
 	background: none;
 }
 @keyframes slider{
