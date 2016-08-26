@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	<style type="text/css">
+		
+		li, ul, div, body{
+			background-color: yellow;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			box-sizing: border-box;
+		}
+		.unordered{
+			width: 1200px;
+			animation: pics 5s infinite;
+			position: relative;
+		}
+		.image{
+			
+		}
+		.container{
+			width: 400px;
+			border: 2px red solid;
+			overflow: hidden;
+			height: 400px;
+		}
+		img{
+			width: 400px;
+			height: 400px;
+			display: block;
+		}
+		@keyframes pics{
+			0% {bottom: 0;}
+			16% {bottom: 0%;}
+			32% {bottom: 103%;}
+			48% {bottom: 103%;}
+			64% {bottom: 205%;}
+			80% {bottom: 205%;}
+			96% {bottom:  0;}
+		}
+	</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class ="unordered">
+				<img src="images/1.jpg">
+				<img src="images/2.jpg">
+				<img src="images/3.jpeg">
+				<img src="images/1.jpg">
+			</div>
+		</div>
+	</body>
+</html>

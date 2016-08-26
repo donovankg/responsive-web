@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>carousel practice</title>
+		<style type="text/css">
+			.carousel{
+				padding: 0;
+				margin: 0;
+				width: 600px;
+				overflow: hidden;
+				background-color: yellow;
+			}
+			.panes{
+			    list-style:none;
+			    position:relative;
+			    width: 500%; 
+			    -moz-animation: carousel 10s infinite;
+			    -webkit-animation: carousel 10s infinite;
+			    animation: carousel 10s infinite;
+			}
+			.panes > li{
+			    float:left;
+			    width: 20%; /* 100 / number of panes */
+			    padding: 0;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+			}
+
+			.carousel img{
+			    display:block;
+			    width: 600px;
+			    height: 600px;
+
+			}
+			@keyframes carousel{
+			    0%    { left:0; }
+			    5%   { left:0; }
+			    10% { left:-100%; }
+			    15% { left:-100%; }
+			    20%   { left:-200%; }
+			    25%   { left:-200%; }
+			    30% { left:-300%; }
+			    35% { left:-300%; }
+			    40%   { left:-400%; }
+			    45%   { left:-400%; }
+			    50% { left:0; }
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class=carousel>
+		  <ul class=panes>
+		    <li>
+		      <img src=images/1.jpg alt="">
+		    </li>
+		    <li>
+		      <img src=images/2.jpg alt="">
+		    </li>
+		    <li>
+		      <img src=images/3.jpeg alt="">
+		    </li>
+		    <li>
+		      <img src=images/4.jpg alt="">
+		    </li>
+		    <li>
+		      <img src=images/5.jpg alt="">
+		    </li>
+		  </ul>
+		</div>
+	</body>
+</html>
