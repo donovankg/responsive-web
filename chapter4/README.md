@@ -35,7 +35,7 @@ fb(6);
     Use of recursion. 
 
 3. Create a custom object type that will hold a number value.  
-
+    // fix the getter and setter .
     a. Make sure that no other data type can be assigned to that variable.  
     
     b. It must hold ONLY numbers.  
@@ -68,8 +68,8 @@ console.log(setter(1));
 	return console.log(value);
 }
 function typeOf (value) {
-	for(var i = 0; i < ataType.length; i++){
-		test(ataType[i]);
+	for(var i = 0; i < value.length; i++){
+		test(value[i]);
 	}
 }
 
@@ -95,6 +95,7 @@ console.log(typeOf(ataType));
 6. Make the function from exercise 5 accept its parameters as either a parameter list or as two arrays containing 2D or 3D point data.  
 
     Example: 
+**    finish this problem 5 / 6
     ```javascript
     distance (1, 2, 2, 2); // returns 1 (done as part of exercise 5) distance ([1,2], [2,2]); // returns 1 
     distance ([1,2], [2,2,4]); // error: incompatible point data 

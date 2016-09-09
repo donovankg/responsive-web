@@ -15,19 +15,18 @@ console.log(answer);
     Basic function creation together with built­in JS Math functionality. 
 
 2. Create a function that will return the addition of N numbers. 
-//extra wrapper, needs to remove
+
     Example: 
     ```javascript
     var list= [1, 4, 6, 7, 2];
-
+var total= 0;
 function add(array){
-	var total= 0;
-   // function subadd(array){
+    function subadd(array){
     	for(var i =0; i < list.length; i++)
     	total=total+list[i];
     	return total;
-//	}
-//	return subadd(array);
+	}
+	return subadd(array);
 }
 console.log(add(list));
 
@@ -35,10 +34,9 @@ console.log(add(list));
     Dynamic argument list handling with JS 
 
 3. Create an object that will hold methods for adding, multiplying, and factorial operations. 
-//factoring not adding
+
     Example: 
     ```javascript
-
 var myMath = {
 	one   :1,
 	two   :2,
@@ -63,7 +61,7 @@ console.log(myMath.fact());
 
 
 4. Create a custom object that will hold an image’s mock information such as pixel color                             data, image size, and name. It must be able to return the information. 
-	// look at exampe on the github
+
     Example:
     ```javascript
    image={
