@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>chapter 13, problem 1</title>
+	<style type="text/css">		
+		div{
+			width: 20%;
+			height: 20vw;
+			background-color: red;
+			text-align: center;
+			float: left;
+		}
+
+		section{
+			width: 300px;
+			background-color: orange;
+		}
+		div:hover{
+			background-color: green;
+		}
+	</style>
+	</head>
+	<body>
+		
+	
+		<script type="text/javascript">
+			var count = 1;
+		for(var i = 0;i < 25; i++){
+		var div = document.createElement('div');
+		div.innerHTML = count;
+		document.body.appendChild(div);
+		count++;
+		}
+
+		 if (document.addEventListener) {                           //#1
+		        this.addEvent = function (elem, type, fn) {              //#2
+		          elem.addEventListener(type, fn, false);
+		          return fn;
+		        };
+		      }
+		     
+
+		      addEvent(window, "load", function () {                       //#1
+		        var elems = document.getElementsByTagName("div");          //#2
+		        for (var i = 0; i < elems.length; i++) (function (elem) {
+		          var handler = addEvent(elem, "click", function () {      //#3
+		            alert(this.innerHTML);
+		          });
+		        })(elems[i]);
+
+		      });
+		</script>
+	</body>
+</html>

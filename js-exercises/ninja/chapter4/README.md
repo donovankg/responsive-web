@@ -57,18 +57,26 @@ console.log(setter(1));
 
     Example: 
     ```javascript
- function test(obj){
-	var value = {}.toString.call(obj).split(' ')[1].slice(0, -1).toLowerCase();
-	return console.log(value);
-}
-function typeOf (value) {
-	for(var i = 0; i < ataType.length; i++){
-		test(ataType[i]);
-	}
-}
+		function test(obj){
+		  var value = {}.toString.call(obj).split(' ')[1].slice(0, -1).toLowerCase();
+			if(value ==='number'){
+				if(obj % 1 != 0){
+					return console.log('float');
+				}
+			}
+			
+		  return console.log(value);
+		}
+		//2nd should be a float
+		function typeOf (value) {
+		for(var i = 0; i < value.length; i++){
+			
+		    test(value[i]);
+		}
+		}
+		var ataType = [1, 6.2831, 'pi*2', [function(){}, 1], {}, function () {}];
+		console.log(typeOf(ataType));
 
-var ataType = [1, 6.2831, 'pi*2', [function(){}, 1], {}, function () {}];
-console.log(typeOf(ataType));
 
      
     ```
