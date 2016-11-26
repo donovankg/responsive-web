@@ -1,67 +1,35 @@
-*{
-	box-sizing: border-box;
-}
-body{
-
-}
-#frame{
-	border-radius: 1.5em;
-	position: absolute;
-	background-color: none;
-	display: flex;
-	flex-direction: column;
-	margin: 1em;
-	flex-wrap: wrap;
+header{
 }
 h1{
-	text-shadow: 2px 2px #0757A4; 
-	border-radius: 5px;
-	color: #C7DEF5;
-	background: #6AA5DE;
-	flex: 0 2 auto;
-	text-align: center;
-	animation: 2s title;
-	box-shadow: 5px 5px 10px #4590D8;
+	margin: 10px;
 }
-@keyframes title{
-	from{opacity: 0;}
-	to {opacity: 1;}
+h2, p{
+	margin: 5px;
 }
-ul{
-	display: flex;
-	flex-direction: row;
-	flex: 0 2 auto;
+nav{
+	margin: 15px;
 }
-li{
-	text-shadow: 2px 2px #0757A4;
-	font-size: 1.5em;
-	list-style-type: none;
-	margin: 3px;
-	flex: 0 2 auto;
-}
-a{
-	color: #C7DEF5;
-}
-li:hover{
-	transition: all .5s ease-in-out;
-	color: #00ff00;
-	border: 10px;
-	border-radius: 5px;
-	background: #3297F9;
-	transform: scale(1.5);
-	box-shadow: 3px 3px 3px #3D5BF9;
-}
+.eventImage{
+	float: right;
+	width: 30%;
 
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
 #slider{
-	border-radius: 25px;
+
+	left: 10%;
+	width: 60%;
 	overflow: hidden;
 	flex: 0 0 40%;
-	margin: 10px;
+	margin: 0 auto;
 	
 }
 .box{
 	position: relative;
-	border-radius: 25px;
 	width: 400%;
 	display: flex;
 	animation: slider 20s infinite;
@@ -79,57 +47,15 @@ li:hover{
 	72% { left:0; }
 }
 #slider img{
-	border-radius: 25px;
 	flex: 0 2 auto;
 	width: 25%;
 	height: 25%;
-
 }
-section{
-	display: flex;
-	flex-direction: column;
-}
-aside{
-	border-radius: 5px;
-	background: lightblue;
-	margin: 10px;
-	box-shadow: 5px 5px 10px #4590D8;
-	border: 1px solid blue;
-	flex: 0 2 auto;
-	display: flex;
-}
-aside .info{
-	flex: 2 0 0;
-}
-#article1{
-	display: flex;
-}
-.speicals{
-display: inline;
-}
-article{
-	border-radius: 5px;
-	background: lightblue;
-	margin: 10px;
-	box-shadow: 5px 5px 10px #4590D8;
-	border: 1px solid blue;
-	flex: 0 0 auto;
-	flex-direction: row;
-}
-h3{
-	flex: 0 2 auto;
-	margin: 0;
-	text-align: center;
-	color: #174F67;
-	text-shadow: 2px 2px #DBF3FE;
-}
-.info{
-	border-radius: 3px;
-	margin: 5px;
-	padding: 3px;
-	flex: 0 2 auto;
-	background: white;
-	box-shadow: 2px 2px 5px #4590D8;
+.smallbox{
+	margin: 5px auto;
+	width: 45%;
+	background-color: lightgrey;
+	padding: 0 15px 0 15px;
 }
 #balloons img{
 	position: absolute;
@@ -139,19 +65,17 @@ h3{
 	width: 5%;
 	animation: sway 5s infinite;
 }
+
 @keyframes sway{
 	0% {transform: rotateZ(10deg);}
 	50% {transform: rotateZ(-10deg);}
 	100% {transform: rotateZ(10deg);}
 }
-ul{
-	background: #6AA5DE;
-	box-shadow: 0px 3px 6px #4590D8;
-}
 
-.info nav{
-	display: inline;
-}
 iframe{
-	width: 100%;
+	width:100%;
+	height: 100%;
+}
+img{
+	margin: 5px;
 }

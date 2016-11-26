@@ -1,41 +1,15 @@
 body{
-background-color: #4590D8;
+	background-color: yellow;
 }
-#frame{
-	top: 0%;
-	border-radius: 5px;
-	margin: 10px 10px 10px 0;
-	background: white;
-	display: flex;
-	flex-direction: column;
-	box-shadow: 5px 5px 10px #0D26AD;
+.smallbox{
+	width: 90%;
 }
-h1{
-	margin: 0 0 -10px 0;
-	box-shadow: 0 4px 10px;
-}
-@keyframes spinlinks{
-	from {transform: rotateX(0deg);}
-	to {transform: rotateX(740deg);}
-}
-section{
-	display: flex;
-	flex-direction: column;
-}
+#slider{
 
-li{
-	font-size: 1em;
-}
-p{
-	flex-wrap: wrap;
-}
-#article1{
-		flex-direction: column;
-}
-#balloons img{
-	left:1%;
-	top:0.3%;
-}
-#moves{
-	visibility: hidden;
+	left: 10%;
+	width: 90%;
+	overflow: hidden;
+	flex: 0 0 40%;
+	margin: 0 auto;
+	
 }
