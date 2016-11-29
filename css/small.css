@@ -10,5 +10,9 @@ body{
 	overflow: hidden;
 	flex: 0 0 40%;
 	margin: 0 auto;
-	
+}
+#slider img{
+	flex: 0 2 auto;
+	width: 25%;
+	height: 25%;
 }
