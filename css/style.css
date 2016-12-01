@@ -3,6 +3,9 @@ header {
    text-align: center;
    width: 100%;
 }
+footer { 
+	text-align: center 
+} 
 nav a {
 	text-decoration: none;
 	color: #3A506B; 
