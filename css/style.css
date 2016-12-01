@@ -27,7 +27,7 @@ nav{
     flex-flow: row wrap;
 }
 #slider{
-
+	border-radius: 8px;
 	left: 10%;
 	width: 60%;
 	overflow: hidden;
