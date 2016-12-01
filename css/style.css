@@ -3,6 +3,7 @@ header {
    text-align: center;
    width: 100%;
 }
+nav a { text-decoration: none; }
 body{
    font-family: "Avenir Next", Avenir, sans-serif;
 }
