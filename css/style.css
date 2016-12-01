@@ -60,7 +60,7 @@ nav{
 .smallbox{
 	margin: 5px auto;
 	width: 45%;
-	height: 400px;
+	height: auto;
 	background-color: lightgrey;
 	padding: 0 15px 0 15px;
 }
