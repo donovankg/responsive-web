@@ -6,6 +6,13 @@ header {
 nav a { text-decoration: none; }
 body{
    font-family: "Avenir Next", Avenir, sans-serif;
+   color: #3A506B;
+}
+.eventImage {
+   float: left;
+   width: 30%;
+   margin: 1em;
+
 }
 h1{
 	margin: 10px;
