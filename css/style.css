@@ -3,12 +3,12 @@ header {
    text-align: center;
    width: 100%;
 }
-footer { 
-	text-align: center 
-} 
+footer {
+	text-align: center
+}
 nav a {
 	text-decoration: none;
-	color: #3A506B; 
+	color: #3A506B;
 }
 body{
    font-family: "Avenir Next", Avenir, sans-serif;
@@ -41,7 +41,7 @@ nav{
 }
 #slider {
    left: 10%;
-   width: 60%;
+   width: 40%;
    overflow: hidden;
    flex: 0 0 40%;
    margin: 0 auto;
