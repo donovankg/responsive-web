@@ -1,4 +1,7 @@
-header{
+header {
+   display: inline-block;
+   text-align: center;
+   width: 100%;
 }
 body{
 	padding: 5px;
