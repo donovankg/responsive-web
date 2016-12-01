@@ -2,7 +2,7 @@ body{
 }
 
 #slider{
-
+	border-radius: 8px;
 	left: 10%;
 	width: 90%;
 	overflow: hidden;
