@@ -26,14 +26,14 @@ nav{
     display: flex;
     flex-flow: row wrap;
 }
-#slider{
-	border-radius: 8px;
-	left: 10%;
-	width: 60%;
-	overflow: hidden;
-	flex: 0 0 40%;
-	margin: 0 auto;
-
+#slider {
+   left: 10%;
+   width: 60%;
+   overflow: hidden;
+   flex: 0 0 40%;
+   margin: 0 auto;
+   border-radius: 8px;
+   border: 2px solid #DB5461;
 }
 .box{
 	position: relative;
