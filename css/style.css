@@ -1,0 +1,160 @@
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+img {
+    width: auto;
+    height: 100px;
+}
+header{
+    background: teal;
+    text-align: center;
+}
+
+nav {
+
+    order: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+}
+
+.nav1 {
+    flex-grow: 1
+}
+
+.nav2 {
+    flex-grow: 1
+}
+
+.nav3 {
+    flex-grow: 1
+}
+
+.nav4 {
+    flex-grow: 1
+}
+.nav5 {
+    flex-grow: 1
+}
+.nav6 {
+    flex-grow: 1
+}
+p {
+    /*border: 1px solid black;*/
+    margin: 0;
+    padding: 5px;
+}
+.heroContainer{
+  order: 2;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+}
+.heroPara{
+  background: lightblue;
+  order: 1;
+  flex-grow: 1;
+}
+.slider {
+   left: 10%;
+   overflow: hidden;
+   flex: 0 0 40%;
+   margin: 0 auto;
+   border: 2px solid #DB5461;
+}
+.box{
+	position: relative;
+	width: 400%;
+	display: flex;
+	animation: slider 20s infinite;
+	background: none;
+}
+.sliderbox{
+
+  margin: 10px auto;
+  width: 40%;
+}
+@keyframes slider{
+	0%    { left:0; }
+	9%   { left:0; }
+	18% { left:-100%; }
+	27% { left:-100%; }
+	36%   { left:-200%; }
+	45%   { left:-200%; }
+	54% { left:-300%; }
+	63% { left:-300%; }
+	72% { left:0; }
+}
+.slider img{
+	flex: 0 2 auto;
+	width: 25%;
+	height: auto;
+}
+.container {
+    order: 3;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row;
+    flex: 1;
+}
+
+.set1 {
+    order: 1;
+    /*width: 40%;*/
+    background: lightblue;
+    flex-grow: 3;
+    border: 1px solid black;
+}
+
+.set2 {
+    order: 2;
+    flex-grow: 3;
+    /*width: 40%;*/
+    background: lightblue;
+    border: 1px solid black;
+}
+
+aside {
+    order: 3;
+    flex-grow: 2;
+    /*height: 100%;*/
+    /*width: 20%;*/
+    background: tan;
+    border: 1px solid black;
+}
+
+footer {
+    order: 4;
+    background: teal;
+    /*text-align: center;*/
+    /*height: 9vh;
+  background: pink;
+  border: 1px solid black;*/
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-flow: column;
+    }
+    .heroContainer{
+      flex-flow: column;
+    }
+}
