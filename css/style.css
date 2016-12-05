@@ -7,8 +7,32 @@ body {
     left: 0;
     margin: 0;
     padding: 0;
+}
+
+.heroText {
+    border-radius: 4px;
+    top: 20%;
+    right: 10%;
+    background: tan;
+    position: absolute;
+    width: 400px;
+    opacity: .6;
+}
+
+.heroText p {
+    opacity: 1 !important;
+}
+
+.imgHider {
+    width: 100%;
+    overflow: hidden;
+    /*height: 28%;*/
+}
+
+.heroImg {
     display: flex;
-    flex-flow: column;
+    width: 100%;
+    height: auto;
 }
 
 .logo {
@@ -42,18 +66,13 @@ header {
 }
 
 .navFull {
-    flex-flow: column;
-    flex-wrap: nowrap;
-    margin: 10px;
-    flex-wrap: nowrap;
-    margin: 0 auto;
+    position: relative;
+      display: flex;
 }
 
 .links {
-
-  float: left;
-  margin: 3px;
-  padding: 2px;
+    margin: 3px;
+    padding: 2px;
 }
 
 a {
@@ -63,12 +82,11 @@ a {
 
 .links:hover {
     background: #7F4E7F;
-    border-radius:  4px;
+    border-radius: 4px;
 }
 
 .navItem {
-  position: relative;
-
+    position: relative;
 }
 
 p {
@@ -96,7 +114,7 @@ p {
 }
 
 .slider {
-    height: 400px;
+  height: 500px;
     left: 10%;
     overflow: hidden;
     flex: 0 0 40%;
@@ -114,7 +132,6 @@ p {
 .sliderbox {
     overflow: hidden;
     margin: 10px auto;
-    /*width: 40%;*/
 }
 
 @keyframes slider {
@@ -161,6 +178,10 @@ p {
     display: flex;
     flex-flow: row;
     flex: 1;
+}
+
+.mobileHeroText {
+    display: none;
 }
 
 .deals {
@@ -221,12 +242,20 @@ footer {
     .heroContainer {
         flex-flow: column;
     }
-    ].links{
-      margin-top: 10px;
+    ].links {
+        margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .mobileHeroText {
+      width: 100%;
+      display: inline;
+    }
+    .mobileHeroText div{
+      padding: 10px;
+      background: #AE6890;
+    }
     .container {
         flex-flow: column;
     }
@@ -236,8 +265,8 @@ footer {
     .slider {
         height: 300px;
     }
-    .navFull{
-      font-size: 10px;
+    .navFull {
+        font-size: 10px;
     }
     img {
         height: 300px;
@@ -260,7 +289,11 @@ footer {
     }
     h1 {
         font-size: 1.5em;
+        padding: 0;
         text-align: right;
-        margin: 10px;
+        margin: 0;
+    }
+    .heroText {
+        visibility: hidden;
     }
 }
