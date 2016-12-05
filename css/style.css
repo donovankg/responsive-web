@@ -66,6 +66,7 @@ header {
 }
 
 .navFull {
+  flex-direction: row-reverse;
     position: relative;
       display: flex;
 }
