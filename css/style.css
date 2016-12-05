@@ -1,4 +1,5 @@
 body {
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -122,6 +123,7 @@ footer {
 }
 .dottedL{
   border-left: dotted black 3px;
+  padding-left: 20px;
 }
 .feature{
   position: relative;
