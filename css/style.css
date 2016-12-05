@@ -39,6 +39,7 @@ header{
     display: -webkit-flex;
     display: flex;
     text-align: center;
+    margin: 5px;
 }
 a{
   text-decoration: none;
