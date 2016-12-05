@@ -135,9 +135,6 @@ footer {
     .heroContainer{
       flex-flow: column;
     }
-    .navFull{
-    display: none;
-    }
 /*    .slider{
       height: 80%;
     }*/
