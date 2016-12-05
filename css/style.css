@@ -10,15 +10,24 @@ body {
     display: flex;
     flex-flow: column;
 }
+.logo{
+  left: 5%;
+  top: 1%;
+  position: absolute;
+  height: 55px;
+animation: sway 5s infinite;
+}
+@keyframes sway{
+  0% {transform: rotateZ(13deg);}
+  50% {transform: rotateZ(-13deg);}
+  100% {transform: rotateZ(13deg);}
+}
 h2 {
   text-align: center;
-}
-img {
-    width: auto;
-    height: 100px;
+  color: #2A061A;
 }
 header{
-    background: teal;
+    background: #AE6890;
     text-align: center;
 }
 
@@ -33,6 +42,7 @@ header{
 }
 a{
   text-decoration: none;
+  color: #2A061A;
 }
 .navItem {
     flex-grow: 1
@@ -43,14 +53,24 @@ p {
     padding: 5px;
 }
 .heroContainer{
+  margin-top: 10px;
+  border: 2px #560E35 solid;
+  position: relative;
   text-align: center;
+  background: #8F406D;
+  width: 80%;
+  left: 10%;
+  padding: 5px 10px 5px 15px;
 }
-
+.heroBox{
+  display: flex;
+}
 .heroPara{
   background: lightblue;
-  /*flex-grow: 1;*/
+  
 }
 .slider {
+  height: 400px;
     left: 10%;
     overflow: hidden;
     flex: 0 0 40%;
@@ -65,9 +85,9 @@ p {
 	background: none;
 }
 .sliderbox{
-    overflow: hidden;
+  overflow: hidden;
   margin: 10px auto;
-  width: 40%;
+  /*width: 40%;*/
 }
 @keyframes slider{
 	0%    { left:0; }
@@ -118,8 +138,15 @@ footer {
 }
 .sliderContainer{
   height: 100%;
+  flex-grow: 1;
+}
+.sliderText{
+  padding: 15px;
+  flex-grow: 1;
+  text-align: left;
 }
 .map{
+    border: 2px #560E35 solid;
 }
 .dottedL{
   border-left: dotted black 3px;
@@ -131,19 +158,16 @@ footer {
   width: 80%;
 }
 @media screen and (max-width: 1030px) {
+  .heroBox{
+    display: inherit;  
+  }
     .container {
         flex-flow: column;
     }
     .heroContainer{
       flex-flow: column;
     }
-/*    .slider{
-      height: 80%;
-    }*/
-    .sliderbox{
-      height: auto;
-      width: 80%;
-    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -153,7 +177,9 @@ footer {
     .heroContainer{
       flex-flow: column;
     }
- 
+ .slider{
+  height: 300px;
+ }
     img{
       height: 300px;
     }
@@ -170,12 +196,14 @@ footer {
   .dottedL{
     border-left: none;
 }
-
+.sliderbox{
+  overflow: hidden;
+  margin: 10px auto; 
+}
+h1{
+  font-size: 1.5em;
+  text-align: right;
+  margin: 10px;
 }
 
-@media screen and (max-width: 300px) {
-    
-    .box{
-      height: 200px;
-    }
 }
