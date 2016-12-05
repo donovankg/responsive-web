@@ -170,6 +170,9 @@ footer {
   footer{
     flex-flow: row;    
   }
+  .dottedL{
+    border-left: none;
+}
 
 }
 
