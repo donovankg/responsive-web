@@ -154,9 +154,7 @@ footer {
     .heroContainer{
       flex-flow: column;
     }
-    .navFull{
-    display: none;
-    }
+ 
     img{
       height: 300px;
     }
