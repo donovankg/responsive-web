@@ -18,7 +18,13 @@ body {
     width: 400px;
     opacity: .6;
 }
-
+.title {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0;
+    text-align: center;;
+    margin: 0;
+}
 .heroText p {
     opacity: 1 !important;
 }
@@ -61,6 +67,7 @@ h2 {
 }
 
 header {
+
     background: #AE6890;
     text-align: center;
 }
@@ -288,7 +295,7 @@ footer {
         overflow: hidden;
         margin: 10px auto;
     }
-    h1 {
+    .title {
         font-size: 1.5em;
         padding: 0;
         text-align: right;
